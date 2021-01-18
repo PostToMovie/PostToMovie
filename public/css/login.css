@@ -1,0 +1,47 @@
+.form_container{
+    width: 350px;
+    margin: 0 auto
+}
+
+.form_container .login{
+    border: 1px solid #efefef;
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.login input{
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px 8px 7px;
+}
+
+.login #submit input{
+    background: #E7E6D2;
+}
+
+.login .googleLogin{
+    background: #E7E6D2;
+}
+
+.login p{
+    margin-bottom: 10px;
+}
+
+
+.form_container .recomendRegister{
+    border: 1px solid #efefef;
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.form_container .recomendRegister a{
+    color:#d8c8b2;
+    text-decoration: none;
+}
