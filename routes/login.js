@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
     req.session.userid = req.body.email
     console.log("session 확인" + req.session.userid)
 
-    res.render("/")
+    res.redirect("/")
 })
 
 module.exports = router;

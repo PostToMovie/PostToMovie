@@ -23,14 +23,12 @@ router.post('/', function(req, res) {
       "name" : name,
       "email" : email,
       "pwd" : pwd
-    };
+    };  
      
     user_data.push(user_list)
     console.log(user_data)
 
-    res.render('register', {id : "hi"});
-
-    res.end();
+    res.redirect("/login")
 
 
 });
