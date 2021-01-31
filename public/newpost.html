@@ -6,7 +6,7 @@
     <title>Feelim</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/newpost.css">
 </head>
 <body>
     <section id=" containner">
@@ -37,31 +37,36 @@
         </header>
 
         <section id="main_container">
-            <div class="form_container">
-                <form class="login">
-                    <p id="id m_text">
-                        <label for="user_id">아이디</label>
-                        <input type="text"  class="inputId">
-                    </p>
-                    <p id="password m_text">
-                        <label for="user_password">비밀번호</label>
-                        <input type="text"  class="inputPassword">
-                    </p>
-                    <p id="submit"><input type="button" value="로그인" class="submit_btn"></p>
-                    <p> <input type="button"  value="구글 아이디로 로그인" class="googleLogin" ></a></p>
-                </form>
-
-                <div class="recomendRegister">
+            <div class="post_form_container">
+                <form class="post_form" method="POST" enctype="multipart/form-data">
+                    <div class="preview">
+                            <div class="upload">
+                                <div class="post_btn">
+                                    <div class="plus_icon">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                        <p>포스트 이미지 추가</p>
+                                        <canvas id="imageCanvas"></canvas>
+                                </div>
+                            </div>
+                    </div>
                     <p>
-                        <label>아이디가 없으신가요?</label>
-                        <a href="register.html">회원가입</a>
+                        <input type="file" name="photo" id="id_photo" required="required">
                     </p>
-                </div>
+                    <p>
+                       <textarea name="content" id="text_field" cols="50" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" class="submit_btn" value="업로드">
+                    </p>
+                </form>
             </div>
 
         </section>
 
 
     </section>
+    <script src="js/newpost.js"></script>
 </body>
 </html>

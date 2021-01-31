@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+    <section id=" containner">
+        <header id ="header">
+            <section class ="inner">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <div class="sprite_insta_icon"></div>
+                        <div class="sprite_write_logo"></div>
+                    </a>
+                </h1>
+                <div class ="search_box">
+                    <input type="text" placeholder="검색" id="search-field">
+
+                    <div class="fake_field">
+                        <span class="sprite_small_search_icon"></span>
+                        <span>검색</span>
+                    </div>
+                </div>
+
+                <div class="right_icons">
+                    <div class="sprite_camera_icon"></div> 
+                    <div class="sprite_compass_icon"></div>
+                    <div class="sprite_heart_icon_outline"></div>
+                    <div class="sprite_user_icon_outline"></div>
+                </div>
+            </section>
+        </header>
+
+        <section id="main_container">
+            <div class="mypage_container">
+                <header class="user_info">
+                    <div class="proflie_image"><img src="images/thumb.jpeg"></div>
+                    <div class="detail">
+                        <div class="top">
+                            <h1 class="name m_text">이름이름</h1>
+                            <button class="proflir_edit">프로필 편집</button>
+                            <button class="logout">로그아웃</button>
+                        </div>
+                        <ul class="middle">
+                            <li>게시물        개</li>
+                            <li>팔로워        명</li>
+                            <li>팔로우        명</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="clickmenu">
+                    <div class="post">게시물</div>
+                    <div class="like">좋아요</div>
+                </div>
+                <div class="postTable">
+                    <div class="pic" data-index="1">1<a href="#"><img src="imgs/img_section/img02.jpg" alt=""></div>
+                    <div class="pic" data-index="2">2<a href="#"><img src="imgs/img_section/img03.jpg" alt=""></div>
+                    <div class="pic" data-index="3">3<a href="#"><img src="imgs/img_section/img04.jpg" alt=""></div>
+                    <div class="pic" data-index="4">4<a href="#"><img src="imgs/img_section/img05.jpg" alt=""></div>
+                    <div class="pic" data-index="5">5<a href="#"><img src="imgs/img_section/img05.jpg" alt=""></div>
+                    <div class="pic" data-index="6">6<a href="#"><img src="imgs/img_section/img02.jpg" alt=""></div>
+                    <div class="pic" data-index="7">7<a href="#"><img src="imgs/img_section/img03.jpg" alt=""></div>
+                    <div class="pic" data-index="8">8<a href="#"><img src="imgs/img_section/img04.jpg" alt=""></div>
+                    <div class="pic" data-index="9">9<a href="#"><img src="imgs/img_section/img05.jpg" alt=""></div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+    <script>
+        var posts = document.querySelectorAll('.pic');
+        var postcount = posts.length;
+        var post = document.querySelector('.postTable');
+        // var postss = [postcount/3] [3];
+
+        // for(i=0 ; i<postcount/3 ; i++){
+        //     for(j=0 ; j<=2 ; j++){
+        //         postss[i][j] = post[postcount];
+        //         postcount--;
+        //     }
+
+        // }
+
+        // console.log(posts[1].getAttribute('data-index'));
+
+
+        for(i=0; i<postcount/3 ; i++){
+            post.insertAdjacentHTML('before',div.data[i]);
+            var datadata[i]=document.querySelector()
+            for(j=0 ; j<=2; j++){
+
+            }
+        }
+    </script>
+</body>
+</html>

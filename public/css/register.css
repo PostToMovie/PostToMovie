@@ -1,0 +1,42 @@
+.form_container{
+    width: 350px;
+    margin: 0 auto
+}
+
+.form_container .register{
+    border: 1px solid #efefef;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.register p label{
+    width: 100px;
+}
+
+.register input{
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px 8px 7px;
+}
+
+.register #submit input{
+    background: #E7E6D2;
+}
+
+
+.register p{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.register #submit{
+    margin-top: 40px;
+}
